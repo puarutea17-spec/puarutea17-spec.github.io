@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive Paper</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="interactive-paper.css" />
+</head>
+<body>
+  <header class="top-bar">
+    <div class="title-wrap">
+      <h1 id="page-title" contenteditable="true">インタラクティブ・ペーパー</h1>
+    </div>
+    <div class="top-controls">
+      <button id="add-section" type="button">＋ セクション追加</button>
+      <button id="export-json" type="button">JSON書き出し</button>
+      <button id="import-json" type="button">JSON読み込み</button>
+      <input id="json-file-input" type="file" accept="application/json" style="display:none" />
+    </div>
+  </header>
+
+  <main class="main-area">
+    <div id="sections"></div>
+  </main>
+
+  <script src="interactive-paper.js"></script>
+</body>
+</html>
